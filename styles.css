@@ -2,6 +2,7 @@
 
 body {
   margin: 2px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -13,16 +14,31 @@ body {
 .nav-wrapper {
   display:flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px;
 }
 .left-side {
   display: flex;
 
 }
 .nav-wrapper > .left-side > div{
+margin: 15px;
 margin-right: 20px;
-font-size: 0.9em;
-text-transform: uppercase;
+font-size: 1.2em;
+font-variant: small-caps;
+padding-bottom: 8px;
+}
+.right-side div{
+  font-variant: small-caps;
+  font-size: 1.5em;
+  padding-top: 8px;
+}
+
+.logo a{
+  text-decoration: none;    color: #8a8a8a;
+}
+
+.logo a:hover {
+  color: black;
 }
 
 .nav-link-wrapper {
@@ -90,6 +106,7 @@ text-transform: uppercase;
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   text-align: center;
   left: 50% ;
   transform: translate(-50%,0);
@@ -102,13 +119,14 @@ text-transform: uppercase;
   margin-bottom: 20px;
   /* justify-content: center; */
 }
-
+/* Add img-text-wrapper-header to add header to hover & below & add divs to html*/
 .img-text-wrapper .subtitle{
   transition: 1s;
   color: transparent;
   font-weight: 600;
 
 }
+/* Add img-text-wrapper-header to add header to hover & above & add divs back to html */
 .img-text-wrapper:hover .subtitle{
   font-weight: 600;
   color: white;
