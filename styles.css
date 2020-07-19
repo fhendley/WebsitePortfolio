@@ -342,7 +342,23 @@ border-bottom: 2px solid var(--p-pink);
   font-weight: bold;
 }
 
-
+.scroll-right{
+  all: initial;
+  /* font-size: 0.2em; */
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid var(--main-header-dg);
+  border-width: 0 3px 3px 0;
+  padding: 8px;
+  transition: border 0.5s;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.scroll-right:hover{
+  border: 2px solid var(--p-grey);
+  border-width: 0 3px 3px 0;
+}
 
 /* for javascript */
 .hover-darken {
