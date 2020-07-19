@@ -2,13 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8" name="viewport" content = "width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title> About Me </title>
+    <title> Francesca Hendley </title>
   </head>
   <body>
     <div class = "container">
     <!-- navigation bar -->
-      <div class= "nav-wrapper">
+      <div id= "top" class= "nav-wrapper">
         <div class="left-side">
           <div class="nav-link-wrapper">
             <a href = "index.html"> Home </a>
@@ -22,7 +23,7 @@
         </div>
         <div class = "right-side">
           <div class= "logo">
-            <a href="index.html"> FRANCESCA HENDLEY</a>
+            <a href="index.html"> Francesca Hendley</a>
           </div>
         </div>
       </div>
@@ -32,27 +33,35 @@
           <!-- Header section -->
           <div class="portfolio-item-wrapper-header">
             <!-- <div class="portfolio-item-wrapper"> -->
-              <div class="portfolio-img-background" style="background-image:url('images/portfolio-header.jpg')"></div>
+              <!-- <div class="portfolio-img-background-header" style="background-image:url('images/portfolio-header-min.jpg')"></div> -->
               <div class="img-text-wrapper-header">
-                <div class="logo-wrapper">
-                  <img src="images/logos/github-logo.jpg" alt="github link">
+                <!-- <div class="logo-wrapper"> -->
+                  <!-- <img src="images/logos/github-logo.jpg" alt="github link"> -->
+                <!-- </div> -->
+                <div class="subtitle-header">
+                  <p>Hi I'm <span class = "name"> Francesca Hendley. </span>I am a recently Graduated <span class="degree" >Web Designer and Developer!</span></p>
+                  <p> Click on the links to find out more.</p>
+                  <!-- <div class="scroll"> -->
+                    <a class = "scroll" href="#links"></a>
+                  <!-- </div> -->
                 </div>
-                <div class="subtitle">This is my header </div>
-              </div>
-            <!-- </div> -->
+              <!-- </div> -->
+            </div>
           </div>
           <!-- end of Header -->
           <!--projects link -->
-          <div class="portfolio-item-wrapper-1">
+          <div class="portfolio-item-wrapper-1" id="links">
             <div class="portfolio-item-wrapper">
-              <div class="portfolio-img-background" style="background-image:url('images/portfolio-header.jpg')"></div>
+              <div class="portfolio-img-background" style="background-image:url('images/backgrounds/projects-bkgd-min.jpg')"></div>
               <div class="img-text-wrapper">
-                <div class="logo-wrapper">
-                  <img src="images/logos/github-logo.jpg">
-                </div>
-                <div class="subtitle">
-                    This is my projects
-                </div>
+                <a href="projects.html">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/projects-logo-min.png">
+                  </div>
+                  <div class="subtitle">
+                    Click here to see some of my projects!
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -60,14 +69,16 @@
           <!-- about me link -->
           <div class="portfolio-item-wrapper-2">
             <div class="portfolio-item-wrapper">
-              <div class="portfolio-img-background" style="background-image:url('images/portfolio-header.jpg')"></div>
+              <div class="portfolio-img-background" style="background-image:url('images/backgrounds/aboutme-bkgd-min.jpg')"></div>
               <div class="img-text-wrapper">
-                <div class="logo-wrapper">
-                  <img src="images/logos/github-logo.jpg">
-                </div>
-                <div class="subtitle">
-                  This is about me
-                </div>
+                <a href = "about.html">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/aboutme-logo-min.png">
+                  </div>
+                  <div class="subtitle">
+                    Click here to find out more about me!
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -75,14 +86,16 @@
           <!-- Linkedin link -->
           <div class="portfolio-item-wrapper-3">
             <div class="portfolio-item-wrapper">
-              <div class="portfolio-img-background" style="background-image:url('images/portfolio-header.jpg')"></div>
+              <div class="portfolio-img-background" style="background-image:url('images/backgrounds/linkedin-bkgd-min.jpg')"></div>
               <div class="img-text-wrapper">
-                <div class="logo-wrapper">
-                  <img src="images/logos/github-logo.jpg">
-                </div>
-                <div class="subtitle">
-                    This is my linkedin
-                </div>
+                <a href="https://www.linkedin.com/in/francesca-hendley/" target="_blank">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/linkedin-logo-min.png">
+                  </div>
+                  <div class="subtitle">
+                      Click here to be taken to my LinkedIn page!
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -90,32 +103,38 @@
           <!--Git hub -->
           <div class="portfolio-item-wrapper-4">
             <div class="portfolio-item-wrapper">
-              <div class="portfolio-img-background" style="background-image:url('images/portfolio-header.jpg')"></div>
+              <div class="portfolio-img-background" style="background-image:url('images/backgrounds/github-bkgd-min.jpg')"></div>
               <div class="img-text-wrapper">
-                <div class="logo-wrapper">
-                  <img src="images/logos/github-logo.jpg">
-                </div>
-                <div class="subtitle">
-                  This is my Github
-                </div>
+                <a href="https://github.com/fhendley" target="_blank">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/github-logo-min.png">
+                  </div>
+                  <div class="subtitle">
+                    Click here to be taken to my GitHub repo!
+                  </div>
+                </a>
               </div>
             </div>
           </div>
           <!--end Github -->
         </div>
       </div>
+      <footer>
+        <div class="footer-wrapper">
+            <div class="footer-text"><h1>Francesca Hendley Portfolio Website 2020</h1></div>
+            <div class="footer-links">
+              <a href="https://www.linkedin.com/in/francesca-hendley/" target="_blank">
+                  <img src="images/logos/linkedin-logo-min.png">
+              </a>
+              <a href="https://github.com/fhendley" target="_blank">
+                <img src="images/logos/github-logo-min.png">
+              </a>
+
+            </div>
+            <div class="footer-contact"> Contact me here:  <a href="mailto:frankiehendley@gmail.com">frankiehendley@gmail.com</a> </div>
+          </div>
+      </footer>
     </div> <!-- end of container -->
-
-
-    <!-- <header>
-        <h1>Hi, I'm <span>Francesca Hendley</span> and I'm a Graduate Web Designer and Developer based in Cheshire.</h1>
-    </header>
-
-    <section>
-      <h2> Hi, my name is Francesca and I am a newly graduate Web Design and Developer looking for a new role.
-        I love learning new technologies and I am excited for any new opportunities! </h2>
-    </section>
- -->
 
   </body>
   <!-- link to javascript file-->
