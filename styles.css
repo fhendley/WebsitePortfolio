@@ -3,17 +3,17 @@
 body {
   margin: 0px;
   font-family: 'Poppins', sans-serif;
+  background-color: #3f3f3f;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
 
-
-
 }
 :root{
   --main-header-pb: #daeaf4;
+  --p-pink: #f5dee2;
 }
 
 /*Nav Styles */
@@ -21,6 +21,9 @@ body {
   display:flex;
   justify-content: space-between;
   padding: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--p-pink);
+
 }
 .left-side {
   display: flex;
@@ -41,11 +44,11 @@ padding-bottom: 8px;
 
 .logo a{
   text-decoration: none;
-  color: #8a8a8a;
+  color: #c1c1c1;
 }
 
 .logo a:hover {
-  color: black;
+  color: #f5dee2;;
 }
 
 .nav-link-wrapper {
@@ -55,17 +58,17 @@ padding-bottom: 8px;
 }
 
 .nav-link-wrapper a {
-  color: #8a8a8a;
+  color: #c9c9c9;
   text-decoration: none;
   transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #f5dee2;;
 }
 
 .nav-link-wrapper a:hover{
-  color: black;
+  color: #f5dee2;;
 }
 
 /*Portfolio Styles */
@@ -107,12 +110,12 @@ padding-bottom: 8px;
   background-repeat: no-repeat;
 }
 
-.img-text-wrapper, .img-text-wrapper-header{
+.img-text-wrapper{
   position: absolute;
   top: 0;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 100%;
   width: 100%;
@@ -120,6 +123,12 @@ padding-bottom: 8px;
   left: 50% ;
   transform: translate(-50%,0);
   /* z-index: 1; */
+}
+.img-text-wrapper, .img-text-wrapper-header{
+  display: flex;
+  justify-content:center;
+  /* text-align: center; */
+
 
 }
 .logo-wrapper {
@@ -156,26 +165,29 @@ padding-bottom: 8px;
 /*header styles */
 /* .portfolio-img-background-header,  */
 .portfolio-item-wrapper-header{
-  height:100%;
+  /* height:100%; */
   /* max-width: 90%; */
 }
 .img-text-wrapper-header .subtitle-header{
   /* margin-top: -50; */
-  color: grey;
+  color: #c9c9c9;
 }
 .img-text-wrapper-header{
-  background-color:var(--main-header-pb);
-  /* padding-bottom: 20px; */
+  /* background-color:var(--main-header-pb); */
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .subtitle-header{
   font-size: 1.6em;
-  width: 60%;
+  width: 80%;
+  margin-left: 20px;
 }
 
 .name, .degree {
   font-size: 2em;
   font-weight: bold;
+  color: #f5dee2;
 }
 /* for javascript */
 .hover-darken {
