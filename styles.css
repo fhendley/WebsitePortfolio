@@ -26,6 +26,8 @@ body {
   padding: 20px;
   padding-bottom: 5px;
   border-bottom: 1px solid var(--p-pink);
+  background-color: var(--main-header-dg);
+  z-index: 99;
 
 }
 .left-side {
@@ -74,9 +76,22 @@ padding-bottom: 8px;
   color: #f5dee2;;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 97%;
+  overflow: hidden;
+  right:0;
+
+}
+
+.sticky + .content-wrapper {
+  padding-top: 60px;
+}
+
 /*Portfolio Styles */
 /*main content grid */
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .portfolio-items-wrapper{
     display: grid;
     width: 100%;
@@ -89,7 +104,7 @@ padding-bottom: 8px;
      "portfolio-item-wrapper-4"
   }
 }
-@media (min-width: 650px){
+@media (min-width: 768px){
 .portfolio-items-wrapper{
   display: grid;
   width: 100%;
@@ -289,7 +304,7 @@ padding-bottom: 8px;
 
 
 /* project page styling */
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .portfolio-items-wrapper-projects{
     display: grid;
     width: 100%;
