@@ -28,10 +28,12 @@ body {
   border-bottom: 1px solid var(--p-pink);
   background-color: var(--main-header-dg);
   z-index: 99;
+  /* width: 100%; */
 
 }
 .left-side {
   display: flex;
+  margin-left: 50px;
 
 }
 .nav-wrapper > .left-side > div{
@@ -79,14 +81,18 @@ padding-bottom: 8px;
 .sticky {
   position: fixed;
   top: 0;
-  width: 97%;
-  overflow: hidden;
+  width: 100%;
+  /* overflow: hidden; */
   right:0;
 
 }
 
 .sticky + .content-wrapper {
   padding-top: 60px;
+}
+
+.sticky + .nav-wrapper{
+  width: 100%;
 }
 
 /*Portfolio Styles */
