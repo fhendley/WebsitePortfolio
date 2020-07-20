@@ -429,3 +429,66 @@ border-bottom: 2px solid var(--p-pink);
   transition: 1s;
   filter: brightness(20%);
 }
+
+/* dropdown nav styling */
+@media (max-width: 768px) {
+  .dropdown{
+    position: fixed;
+    /* display:block; */
+    align-items: center;
+    right:10px;
+    float: right;
+  }
+  .dropbtn {
+    background-color: var(--p-pink);
+    color: var(--main-header-dg);
+    /* padding: 50px; */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-content{
+    display: none;
+    color: var(--main-header-dg);
+    /* padding: 20px; */
+    /* float: left; */
+  }
+  .dropdown-content a{
+    padding: 20px;
+    color: var(--main-header-dg);
+    display: block;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover{
+    /* display: none; */
+    color: var(--p-pink);
+    background-color: var(--p-grey);
+  }
+  .nav-wrapper{
+    border-bottom: 0px;
+  }
+  button.dropbtn{
+    right:0;
+    padding: 20px;
+  }
+  .nav-wrapper .right-side {
+    display: none;
+  }
+  .nav-wrapper .left-side{
+    display: none;
+  }
+  .show {
+    display: block;
+    float: left;
+    background-color: var(--p-pink);
+    /* padding: 30px;
+    padding-right: 50px; */
+    /* padding-left: 20px; */
+    /* margin: 10px; */
+  }
+}
+@media(min-width: 768px){
+.dropdown{
+  display:none;
+}
+}
